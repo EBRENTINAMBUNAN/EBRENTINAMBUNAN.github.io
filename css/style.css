@@ -1,0 +1,38 @@
+.c1 {
+  padding: 5rem;
+  background: #212f3c;
+}
+.c1 img {
+  padding: 2rem;
+}
+.c1 h1 {
+  padding: 2rem;
+  font-family: sans-serif;
+  color: whitesmoke;
+}
+.c1 p {
+  color: whitesmoke;
+}
+hr {
+  color: magenta;
+}
+.contact {
+  background-color: #212f3c;
+  padding: 2rem;
+}
+.contact h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+}
+#about {
+  padding: 2rem;
+}
+#about h2 {
+  font-family: fantasy;
+}
+.projek h2 {
+  font-family: fantasy;
+}
+section {
+  padding-top: 8rem;
+}
