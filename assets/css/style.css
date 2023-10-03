@@ -1,38 +1,20 @@
-.c1 {
-  padding: 2rem;
-  background: #212f3c;
+
+.jumbotron {
+    padding: 2rem;
+    background-color: black;
 }
-.c1 img {
-  padding: 2rem;
+.jumbotron img {
+    padding: 0.5rem;
 }
-.c1 h1 {
-  padding: 2rem;
-  font-family: sans-serif;
-  color: whitesmoke;
+.jumbotron h1 {
+    font-family: monospace;
+    color: aliceblue;
+    padding: 1rem;
 }
-.c1 p {
-  color: whitesmoke;
+.jumbotron .lead {
+    color: aliceblue;
+    font-family: monospace;
 }
-hr {
-  color: magenta;
-}
-.contact {
-  background-color: #212f3c;
-  padding: 2rem;
-}
-.contact h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: whitesmoke;
-}
-#about {
-  padding: 2rem;
-}
-#about h2 {
-  font-family: fantasy;
-}
-.projek h2 {
-  font-family: fantasy;
-}
-section {
-  padding-top: 8rem;
+.jumbotron .info {
+    color:chartreuse;
 }

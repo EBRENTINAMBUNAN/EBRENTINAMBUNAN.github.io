@@ -6,201 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- Additional CSS for Parallax -->
-    <style>
-      .parallax {
-        background-image: url('path-to-your-parallax-image.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 500px;
-      }
-    </style>
 
-    <!-- Optional JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <title>Ebren Tinambunan | My Portofolio</title>
   </head>
+  <style>
+    .img-fluid:hover {
+        transform: scale(1.1); /* Membesar saat di-hover */
+        transition: transform 0.3s ease;
+    }
+    .social-icons {
+    margin-top: 10px; /* Jarak dari teks hak cipta ke ikon-ikon */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Jarak antara ikon-ikon */
+    color: #f8f2f2; /* Warna ikon */
+    font-size: 24px; /* Ukuran ikon */
+}
+
+</style>
+
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Portofolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skill">My Skill</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projek">My Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- End Navbar -->
 
-    <!-- Parallax Section -->
-    <section id="home" class="parallax">
-      <div class="container c1 text-center">
-        <img src="assets/img/poto.jpg" alt="Ebren Tinambunan" width="200" class="rounded-circle">
-        <h1>Mr. Ebren Tinambunan</h1>
-        <p class="font-monospace">Saya Seorang <span class="efek-ngetik"></span></p>
-      </div>
-    </section>
-    <!-- End Parallax Section -->
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col">
-            <p>About Me Description</p>
-          </div>
-          <div class="col">
-            <p class="font-monospace">AWOKAWOK</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- Skill Section -->
-    <section id="skill">
-      <hr>
-      <div>
-        <h3 class="text-center font-monospace">Programming Language Skills</h3>
-      </div>
-      <hr>
-      <div class="container text-center">
-        <!-- HTML Skill -->
-        <h4>HTML</h4>
-        <div class="progress">
-          <div class="progress-bar" style="width: 100%">100%</div>
-        </div><br>
-        <!-- CSS Skill -->
-        <h4>CSS</h4>
-        <div class="progress">
-          <div class="progress-bar bg-success" style="width: 90%">90%</div>
-        </div><br>
-        <!-- JavaScript Skill -->
-        <h4>JAVASCRIPT</h4>
-        <div class="progress">
-          <div class="progress-bar bg-warning" style="width: 80%">80%</div>
-        </div><br>
-        <!-- PHP & MySQL Skill -->
-        <h4>PHP & Mysql</h4>
-        <div class="progress">
-          <div class="progress-bar bg-danger" style="width: 50%">50%</div>
-        </div>
-      </div>
-    </section>
-    <!-- End Skill Section -->
-
-    <!-- Framework Skill Section -->
-    <hr>
-    <div>
-      <h3 class="text-center font-monospace">Framework Skills</h3>
-    </div>
-    <hr>
-    <div class="container text-center">
-      <!-- Bootstrap Skill -->
-      <h4>Boostrap</h4>
-      <div class="progress">
-        <div class="progress-bar" style="width: 100%">100%</div>
-      </div><br>
-      <!-- Laravel Skill -->
-      <h4>Laravel</h4>
-      <div class="progress">
-        <div class="progress-bar bg-success" style="width: 90%">90%</div>
-      </div>
-    </div>
-    <!-- End Framework Skill Section -->
-
-    <!-- Project Section -->
-    <section id="projek">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Projects</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/M A S U K.html" class="card-img-top" alt="projek">
-              <p>Project 1 Description</p>
+        <div class="jumbotron">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/img/foto.jpg" alt="Foto Anda" class="img-fluid rounded-circle shadow bg-white" width="250">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Mr.Ebren Tinambunan</h1>
+                        <p class="info">Fullstack Web Developer || College Student</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/ebren_tinambunan/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:ebrentinambunan2003@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://t.me/ebrentinambunan/" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/projek.webp" class="card-img-top" alt="projek">
-              <p>Project 2 Description</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="assets/img/projek.webp" class="card-img-top" alt="projek">
-              <p>Project 3 Description</p>
-            </div>
-          </div>
-          <!-- Tambahkan lebih banyak item proyek sesuai kebutuhan -->
-        </div>
-      </div>
-    </section>
-    <!-- End Project Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact text-center">
-      <h1>Hubungi saya</h1>
-      <br>
       <div class="container">
         <div class="row">
-          <div class="col order-last">
-            <a href="http://wa.me/6281263308247/">
-              <img src="assets/img/wa.png" alt="" width="50" class="rounded-circle">
-            </a>
+           <div class="text-center" style="padding: 2rem;">
+            <h2>My skill</h2>
+           </div>
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="assets/img/boostrap.png" style="width: 100px;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img src="assets/img/php.png" style="width: 180px;" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img src="assets/img/js.png" style="width: 200px;" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img src="assets/img/python.png" style="width: 330px;" alt="">
+                  </div>
+                </div>
+              </div>
+
           </div>
-          <div class="col">
-            <a href="http://instagram.com/ebren_tinambunan">
-              <img src="assets/img/ig.webp" alt="" width="50" class="rounded-circle">
-            </a>
-          </div>
-          <div class="col order-first">
-            <a href="http://t.me/ebrentinambunan">
-              <img src="assets/img/tele.webp" alt="" width="50" class="rounded-circle">
-            </a>
-          </div>
-        </div>
       </div>
-    </section>
-    <!-- End Contact Section -->
+<!-- Tambahkan lebih banyak skill di sini -->
 
-    <!-- JavaScript for Typing Effect -->
-    <script src="assets/js/script.js"></script>
 
+        <section id="portofolio" class="py-5">
+            <hr>
+            <div class="container">
+                <h2 class="text-center">My Project</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/projek1.png" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">WEB PANEL SMM</p>
+                                <p class="card-text">language used : HTML,CSS,JS, and PHP</p>
+                                <p class="card-text">Framework used : Boostrap 5</p>
+                                <a href="https://www.parnapedia.my.id/" target="_blank" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/projek2.png" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">WEB KELAS</p>
+                                <p class="card-text">language used : HTML,CSS,and JS</p>
+                                <p class="card-text">Framework used : Boostrap 5</p>
+                                <a href="https://ebrentinambunan.github.io/01tplm008/" target="_blank" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tambahkan lebih banyak kartu proyek di sini -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/projek.png" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Deskripsi project 3.</p>
+                                <a href="#" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        &copy; 2023 EbrenTinambunan. Hak Cipta Dilindungi.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
