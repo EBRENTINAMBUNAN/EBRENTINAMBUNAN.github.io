@@ -29,11 +29,10 @@
     
 .jumbotron {
     padding: 2rem;
-    min-height: 600px; /* Ganti nilai ini sesuai kebutuhan */
     background-image: url('https://images.unsplash.com/photo-1481660471672-28a88967efdc?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFlc3RoZXRpYyUyMGJsYWNrfGVufDB8fDB8fHww');
     background-size: cover;
-}
 
+}
 .jumbotron img {
     padding: 0.5rem;
 }
@@ -49,23 +48,6 @@
 nav {
     background-image: url('https://images.unsplash.com/photo-1481660471672-28a88967efdc?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFlc3RoZXRpYyUyMGJsYWNrfGVufDB8fDB8fHww');
     background-size: cover;
-}
-
-/* Tambahkan gaya CSS berikut di bagian dalam elemen <style> atau dalam file eksternal CSS */
-
-.download-button {
-    background-color: transparent; /* Warna latar belakang tombol */
-    color: black; /* Warna teks */
-    border: none; /* Hapus garis tepi tombol */
-    padding: 10px 20px; /* Spasi dalam tombol */
-    border-radius: 5px; /* Membuat sudut tombol bulat */
-    cursor: pointer; /* Mengubah kursor saat mengarahkan ke tombol */
-    text-shadow: 2px 2px 4px #000; /* Efek bayangan teks */
-    transition: background-color 0.3s ease; /* Animasi ketika hover */
-}
-
-.download-button:hover {
-    background-color: black; /* Warna latar belakang saat di-hover */
 }
 
 </style>
@@ -95,8 +77,7 @@ nav {
 
         <div class="jumbotron">
             <div class="container text-center">
-                <div class="card" style="background: transparent; padding: 2rem;bottom: 3px;">
-                    <div class="row">
+                <div class="row">
                     <div class="col-md-6">
                         <img src="assets/img/foto.jpg" alt="Foto Anda" class="img-fluid rounded-circle shadow bg-white" width="250">
                     </div>
@@ -108,25 +89,65 @@ nav {
                             <a href="mailto:ebrentinambunan2003@gmail.com"><i class="fas fa-envelope"></i></a>
                             <a href="https://t.me/ebrentinambunan/" target="_blank"><i class="fab fa-telegram"></i></a>
                         </div>
-                       <div style="padding: 1rem;">
-                        <button class="download-button">
-                        <a href="lokasi_anda/file.pdf" download>
-                        <i class="fas fa-download" style="color: white; text-shadow: 5px 3px 5px #000;"> My Resume</i></a>
-                        </button>
-                        </div>
-
-                        </div>
                     </div>
                 </div>
-                </div>
             </div>
-
           </div>
 
 
-        
-        
 
+
+        <section id="portofolio" class="py-5">
+            <hr>
+            <div class="container">
+                <h2 class="text-center">My Project</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/projek1.png" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">WEB PANEL SMM</p>
+                                <p class="card-text">language used : HTML,CSS,JS, and PHP</p>
+                                <p class="card-text">Framework used : Boostrap 5</p>
+                                <a href="https://www.parnapedia.my.id/" target="_blank" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/projek2.png" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 2</h5>
+                                <p class="card-text">WEB KELAS</p>
+                                <p class="card-text">language used : HTML,CSS,and JS</p>
+                                <p class="card-text">Framework used : Boostrap 5</p>
+                                <a href="https://ebrentinambunan.github.io/01tplm008/" target="_blank" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tambahkan lebih banyak kartu proyek di sini -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/img/projek.png" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <p class="card-text">Deskripsi project 3.</p>
+                                <a href="#" class="btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+           <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+              <p class="lead" style="size: 15px;">Copyright All Rights Reserved.</p>
+            </div>
+          </div>
+        </footer>
         
     <!-- Optional JavaScript; choose one of the two! -->
 
