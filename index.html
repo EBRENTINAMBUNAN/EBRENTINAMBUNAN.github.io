@@ -68,6 +68,7 @@ nav {
     background-color: black; /* Warna latar belakang saat di-hover */
 }
 
+
 </style>
 
   <body>
@@ -81,11 +82,20 @@ nav {
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="index.html" style="color: white; text-shadow: 5px 3px 5px #000;">HOME</a>
-        <a class="nav-link" href="about.html" style="color: white; text-shadow: 5px 3px 5px #000;">ABOUT</a>
-        <a class="nav-link" href="projek.html" style="color: white; text-shadow: 5px 3px 5px #000;">PROJECT</a>
-        <a class="nav-link" href="skill.html" style="color: white; text-shadow: 5px 3px 5px #000;">SKILL</a>
-      </div>
+        <a class="nav-link" href="index.html" style="color: white; text-shadow: 5px 3px 5px #000;">
+            <i class="fas fa-home"></i> HOME
+        </a>
+        <a class="nav-link" href="about.html" style="color: white; text-shadow: 5px 3px 5px #000;">
+            <i class="fas fa-user"></i> ABOUT
+        </a>
+        <a class="nav-link" href="projek.html" style="color: white; text-shadow: 5px 3px 5px #000;">
+            <i class="fas fa-project-diagram"></i> PROJECT
+        </a>
+        <a class="nav-link" href="skill.html" style="color: white; text-shadow: 5px 3px 5px #000;">
+            <i class="fas fa-tools"></i> SKILL
+        </a>
+    </div>
+    
     </div>
   </div>
 </nav>
@@ -102,7 +112,7 @@ nav {
                     </div>
                     <div class="col-md-6">
                         <h1 style="color: white; text-shadow: 5px 3px 5px #000;">Mr.Ebren Tinambunan</h1>
-                        <p class="info" style="color: white; text-shadow: 5px 3px 5px green;">Beginner Web Developer | College Student | Freelancer</p>
+                        <p class="info" id="typing-text" style="color: white; text-shadow: 5px 3px 5px green; font-family: monospace;"></p>
                         <div class="social-icons">
                             <a href="https://www.instagram.com/ebren_tinambunan/" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a href="mailto:ebrentinambunan2003@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -110,7 +120,7 @@ nav {
                         </div>
                        <div style="padding: 1rem;">
                         <button class="download-button">
-                        <a href="lokasi_anda/file.pdf" download>
+                        <a href="#" download>
                         <i class="fas fa-download" style="color: white; text-shadow: 5px 3px 5px #000;"> My Resume</i></a>
                         </button>
                         </div>
@@ -132,7 +142,43 @@ nav {
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script>
+      var textArray = ["Junior Web Developer", "College Student", "Freelancer"];
+      var typingText = document.getElementById("typing-text");
+      var index = 0;
+    
+      function typeWriter(text, i) {
+        if (i < text.length) {
+          typingText.innerHTML += text.charAt(i);
+          setTimeout(function() {
+            typeWriter(text, i + 1)
+          }, Math.floor(Math.random() * 150) + 50); // Random delay antara 50ms hingga 200ms
+        } else {
+          setTimeout(function() {
+            removeText(text);
+          }, 1000); // Waktu sebelum menghapus teks
+        }
+      }
+    
+      function removeText(text) {
+        if (text.length > 0) {
+          typingText.innerHTML = text.substring(0, text.length - 1);
+          setTimeout(function() {
+            removeText(text.substring(0, text.length - 1))
+          }, 50); // Kecepatan penghapusan teks
+        } else {
+          index++;
+          if (index >= textArray.length) {
+            index = 0; // Kembali ke awal jika sudah mencapai akhir array
+          }
+          setTimeout(function() {
+            typeWriter(textArray[index], 0);
+          }, 500); // Waktu sebelum menampilkan teks berikutnya
+        }
+      }
+    
+      typeWriter(textArray[index], 0);
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
